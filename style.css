@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fauna One", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1000;
+}
+
+.section {
+  height: 100%;
+  width: calc(100% / 5);
+  float: left;
+  position: relative;
+}
+
+.section:nth-child(1) {
+  background: #f4f5fb;
+}
+
+.section:nth-child(2) {
+  background: #22A7F0;
+}
+
+.section:nth-child(3) {
+  background: #F9690E;
+}
+
+.section:nth-child(4) {
+  background: #9B59B6;
+}
+
+.section:nth-child(5) {
+  background: #03C9A9;
+}
+
+.sections {
+  width: 500%;
+  height: 100%;
+}
+
+.section__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+
+.text-section h2 {
+  /* font-family: 'Dancing Script', cursive; */
+  font-size: 3rem;
+  color: #597cff;
+  margin-bottom: 10px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center;
+  position: relative;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  padding: 50px 20px;
+  box-sizing: border-box; /* Ensure padding is included in height/width */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.text-section {
+  text-align: left;
+  flex-basis: 60%;
+}
+
+.text-section h1 {
+  font-family: 'Press Start 2P', cursive; /* Use 'Press Start 2P' for UTSAV */
+  font-size: 8rem; /* Default size */
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.text-section h2.sub-text {
+  font-family: 'Roboto';
+  font-size: 2rem; /* Default size */
+  color: #666;
+}
+
+.text-section .brochure-btn {
+  margin-top: 20px;
+  padding: 20px 70px; /* Increased padding */
+  background-color: #597cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.robot {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.robot img {
+  max-width: 100%;
+  height: auto;
+}
+
+.corner-image {
+  position: absolute;
+  width: 300px; /* Default size */
+  height: 300px; /* Default size */
+  border-radius: 10px;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+/* Timer section fixed at the bottom */
+.timer {
+  margin-top: 40px;
+  font-size: 2rem; /* Increased font size */
+}
+
+.timer div {
+  display: inline-block;
+  padding: 20px; /* Increased padding */
+  background-color: #E6EFFF;
+  margin: 0 10px; /* Increased margin */
+  border-radius: 8px;
+  font-weight: bold;
+  color: #4A90E2;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-content {
+    flex-direction: column;
+  }
+  .text-section {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .robot {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-section h2 {
+    font-size: 2rem; /* Adjusted size */
+  }
+  .text-section h1 {
+    font-size: 4rem; /* Adjusted size */
+  }
+  .text-section h2.sub-text {
+    font-size: 1.5rem; /* Adjusted size */
+  }
+  .text-section .brochure-btn {
+    padding: 10px 20px; /* Adjusted padding */
+    font-size: 0.9rem; /* Adjusted size */
+  }
+  .corner-image {
+    width: 200px; /* Reduced size */
+    height: 200px; /* Reduced size */
+  }
+  .robot {
+    margin-top: 50px; /* Added margin-top in mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-section h2 {
+    font-size: 1.5rem; /* Further adjusted size */
+  }
+  .text-section h1 {
+    font-size: 3rem; /* Further adjusted size */
+  }
+  .text-section h2.sub-text {
+    font-size: 1.2rem; /* Further adjusted size */
+  }
+  .text-section .brochure-btn {
+    padding: 8px 16px; /* Further adjusted padding */
+    font-size: 0.8rem; /* Further adjusted size */
+  }
+  .corner-image {
+    width: 150px; /* Further reduced size */
+    height: 150px; /* Further reduced size */
+  }
+}
